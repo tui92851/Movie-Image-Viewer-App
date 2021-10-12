@@ -11,7 +11,7 @@ class SelectionActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        title = "Movies"
+        title = resources.getString(R.string.title)
 
         val manager = GridLayoutManager(this, 2)
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
@@ -21,16 +21,18 @@ class SelectionActivity : AppCompatActivity() {
 
     private fun getMovieData():ArrayList<MovieModel>{
         val list = ArrayList<MovieModel>()
-        list.add(MovieModel("Deadpool", R.drawable.deadpool))
-        list.add(MovieModel("Hobbs and Shaw", R.drawable.fast_furious_presents_hobbs_shaw))
-        list.add(MovieModel("Free Guy", R.drawable.free_guy))
-        list.add(MovieModel("Deadpool 2", R.drawable.deadpool_2))
-        list.add(MovieModel("Green Lantern", R.drawable.green_lantern))
-        list.add(MovieModel("Life", R.drawable.life_theatrical))
-        list.add(MovieModel("Pokemon Detective Pikachu", R.drawable.pokemon_detective_pikachu))
-        list.add(MovieModel("The Amityville Horror", R.drawable.the_amityville_horror))
-        list.add(MovieModel("The Croods", R.drawable.the_croods))
-        list.add(MovieModel("The Hitman's Bodyguard", R.drawable.the_hitmans_bodyguard))
+        val array: Array<String> = resources.getStringArray(R.array.movies)
+        val iterator = array.iterator()
+        list.add(MovieModel(iterator.next(), R.drawable.deadpool))
+        list.add(MovieModel(iterator.next(), R.drawable.fast_furious_presents_hobbs_shaw))
+        list.add(MovieModel(iterator.next(), R.drawable.free_guy))
+        list.add(MovieModel(iterator.next(), R.drawable.deadpool_2))
+        list.add(MovieModel(iterator.next(), R.drawable.green_lantern))
+        list.add(MovieModel(iterator.next(), R.drawable.life_theatrical))
+        list.add(MovieModel(iterator.next(), R.drawable.pokemon_detective_pikachu))
+        list.add(MovieModel(iterator.next(), R.drawable.the_amityville_horror))
+        list.add(MovieModel(iterator.next(), R.drawable.the_croods))
+        list.add(MovieModel(iterator.next(), R.drawable.the_hitmans_bodyguard))
         return list
     }
 }

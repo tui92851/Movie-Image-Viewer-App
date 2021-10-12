@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movies">
+        <item>@string/deadpool</item>
+        <item>@string/fast_furious_presents_hobbs_shaw</item>
+        <item>@string/free_guy</item>
+        <item>@string/deadpool_2</item>
+        <item>@string/green_lantern</item>
+        <item>@string/life_theatrical</item>
+        <item>@string/pokemon_detective_pikachu</item>
+        <item>@string/the_amityville_horror</item>
+        <item>@string/the_croods</item>
+        <item>@string/the_hitmans_bodyguard</item>
+    </string-array>
+</resources>

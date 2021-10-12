@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application de visionneuse d\'images de film</string>
+    <string name="title_activity_display">Afficher l\'activité</string>
+    <string name="first_fragment_label">Premier fragment</string>
+    <string name="second_fragment_label">Deuxième fragment</string>
+    <string name="next">Prochain</string>
+    <string name="previous">Précédent</string>
+    <string name="hello_first_fragment">Bonjour premier fragment</string>
+    <string name="hello_second_fragment">Bonjour deuxième fragment.</string>
+    <string name="dummy_text">Deadpool</string>
+    <string name="image_content_description">image de film agrandie</string>
+    <string name="click_an_image_below_to_view">Cliquez sur une image ci-dessous pour voir</string>
+    <string name="title">Visionneuse de films</string>
+    <string name="deadpool">Deadpool</string>
+    <string name="fast_furious_presents_hobbs_shaw">Hobbs et Shaw</string>
+    <string name="free_guy">L\'homme libre</string>
+    <string name="deadpool_2">Deadpool 2</string>
+    <string name="green_lantern">Green Lantern</string>
+    <string name="life_theatrical">Vie</string>
+    <string name="pokemon_detective_pikachu">Pokémon - Détective Pikachu</string>
+    <string name="the_amityville_horror">Amityville: La maison du diable</string>
+    <string name="the_croods">Les Croods</string>
+    <string name="the_hitmans_bodyguard">Mon meilleur ennemi</string>
+</resources>

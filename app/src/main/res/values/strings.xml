@@ -8,5 +8,25 @@
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_second_fragment">Hello second fragment.</string>
+
+    <string name="dummy_text">Deadpool</string>
+    <string name="image_content_description">expanded movie image</string>
+    <string name="click_an_image_below_to_view">Click an image below to view</string>
+    <string name="title">Movie Viewer</string>
+
+    <string name="deadpool">Deadpool</string>
+    <string name="fast_furious_presents_hobbs_shaw">Hobbs and Shaw</string>
+    <string name="free_guy">Free Guy</string>
+    <string name="deadpool_2">Deadpool 2</string>
+    <string name="green_lantern">Green Lantern</string>
+    <string name="life_theatrical">Life</string>
+    <string name="pokemon_detective_pikachu">Pokemon Detective Pikachu</string>
+    <string name="the_amityville_horror">The Amityville Horror</string>
+    <string name="the_croods">The Croods</string>
+    <string name="the_hitmans_bodyguard">The Hitman\'s Bodyguard</string>
+
+
+
+
 </resources>

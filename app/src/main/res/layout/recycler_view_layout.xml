@@ -37,8 +37,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_margin="10sp"
-                android:layout_toLeftOf="@id/more"
-                android:text="Deadpool"
+                android:layout_toStartOf="@id/more"
+                android:text="@string/dummy_text"
                 android:textColor="#000"
                 android:textSize="17sp"
                 android:textStyle="bold" />
