@@ -25,8 +25,8 @@
     <string name="the_amityville_horror">The Amityville Horror</string>
     <string name="the_croods">The Croods</string>
     <string name="the_hitmans_bodyguard">The Hitman\'s Bodyguard</string>
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

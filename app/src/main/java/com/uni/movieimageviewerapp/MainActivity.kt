@@ -2,21 +2,23 @@ package com.uni.movieimageviewerapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
 
-class SelectionActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val selectionFragment = SelectionFragment.newInstance(getMovieData())
+        if (savedInstanceState == null) {
 
-        title = resources.getString(R.string.title)
-
-        val manager = GridLayoutManager(this, 2)
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
-        recyclerView.layoutManager = manager
-        recyclerView.adapter = ImageAdapter(this, getMovieData())
+            supportFragmentManager.commit {
+                setReorderingAllowed(true)
+                add(R.id.fragment_container_view, selectionFragment)
+                add<DisplayFragment>(R.id.fragment_container_view2)
+            }
+        }
     }
 
     private fun getMovieData():ArrayList<MovieModel>{
@@ -35,4 +37,5 @@ class SelectionActivity : AppCompatActivity() {
         list.add(MovieModel(iterator.next(), R.drawable.the_hitmans_bodyguard))
         return list
     }
+
 }
